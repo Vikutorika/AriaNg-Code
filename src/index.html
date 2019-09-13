@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#3c4852">
     <meta name="format-detection" content="telephone=no"/>
     <title>AriaNg</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="http://bili33.top/img/favicon.png">
     <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
     <link rel="apple-touch-icon" href="touchicon.png">
     <!-- build:css css/bootstrap-3.4.1.min.css -->
@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="styles/controls/angular-promise-buttons.css"/>
     <link rel="stylesheet" href="styles/theme/default.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- FontAwesome CSS-->
 </head>
 <body class="hold-transition skin-aria-ng sidebar-mini fixed">
 <div class="wrapper" ng-controller="MainController" ng-swipe-left="swipeActions.leftSwipe()" ng-swipe-right="swipeActions.rightSwipe()" ng-swipe-disable-mouse>
@@ -242,6 +244,13 @@
                     <a href="#!/status">
                         <span class="label pull-right" ng-if="globalStatusContext.isEnabled || isCurrentRpcUseWebSocket" ng-class="{'label-primary': taskContext.rpcStatus === 'Connecting', 'label-success': taskContext.rpcStatus === 'Connected', 'label-danger': taskContext.rpcStatus === 'Disconnected'}" ng-bind="taskContext.rpcStatus | translate"></span>
                         <i class="fa fa-server"></i> <span translate>Aria2 Status</span>
+                    </a>
+                </li>
+                <li class="ng-cloak" data-href-match="http://bili33.top/2019/08/04/BaiduNetDisk-Limit-Break/">
+                    <a href="http://bili33.top/2019/08/04/BaiduNetDisk-Limit-Break/"> 
+                        <i class="fa fa-question-circle"></i>
+                        <span translate>AriaNg Help</span>
+                        </span>
                     </a>
                 </li>
             </ul>
